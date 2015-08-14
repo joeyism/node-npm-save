@@ -1,0 +1,28 @@
+{
+  "name": "npm-save",
+  "version": "1.0.0",
+  "description": "A module that allows module npm install --save or --save-dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeyism/node-npm-save.git"
+  },
+  "keywords": [
+    "npm",
+    "save",
+    "dev",
+    "install",
+    "savedev",
+    "module",
+    "node"
+  ],
+  "author": "Joey Sham <sham.joey@gmail.com> (http://www.joeyism.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeyism/node-npm-save/issues"
+  },
+  "homepage": "https://github.com/joeyism/node-npm-save#readme"
+}
