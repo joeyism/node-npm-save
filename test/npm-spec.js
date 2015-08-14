@@ -42,7 +42,7 @@ describe("npm", function(){
             mockery.registerMock("child_process", createFakeSpawn("close"));
             npm = require(pathToNpm);    
 
-            npm.save(["kontains"]).then(function(result){
+            npm.save(["kontains", "xcept"]).then(function(result){
                 expect(result).to.be.undefined;
                 done();
             });
@@ -90,7 +90,7 @@ describe("npm", function(){
             mockery.registerMock("child_process", createFakeSpawn("close"));
             npm = require(pathToNpm);    
 
-            npm.saveDev(["kontains"]).then(function(result){
+            npm.saveDev(["kontains", "xcept"]).then(function(result){
                 expect(result).to.be.undefined;
                 done();
             });
