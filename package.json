@@ -1,6 +1,6 @@
 {
   "name": "npm-save",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module that allows module npm install --save or --save-dev",
   "main": "index.js",
   "scripts": {
