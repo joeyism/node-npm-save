@@ -10,7 +10,8 @@ var makeSureIsArray = function(elem){
 var install = function(packages, options){
     packages = makeSureIsArray(packages);
 
-    command = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
+    var command = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
+
     var deferred = q.defer();
 
 
