@@ -10,7 +10,9 @@ var makeSureIsArray = function(elem){
 var install = function(packages, options){
     packages = makeSureIsArray(packages);
 
+    command = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
     var deferred = q.defer();
+
 
     var install = ["install"];
 
@@ -18,7 +20,7 @@ var install = function(packages, options){
         install.push(options);
     };
 
-    var g = spawn("npm", install.concat(packages), { stdio: 'inherit' });
+    var g = spawn(command, install.concat(packages), { stdio: 'inherit' });
 
     g.on("error", function(err){
         deferred.reject(err);
